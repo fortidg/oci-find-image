@@ -11,7 +11,7 @@
 
 * Sample output
 
-...sh
+...
     {
       "displayName": "FortiAnalyzer Centralized Logging/Reporting (BYOL)",
       "listingId": "ocid1.appcataloglisting.oc1..aaaaaaaa4ehcyncbbmuotd6ede2lengq7uoash27s4hgwpzexsktsxanp6oa",
@@ -78,6 +78,7 @@
       "publisherName": "Fortinet, Inc.",
       "summary": "AI-based, multi-layered protection for web-based applications"
     },
+
 ```
 
 ### I added the shell script in the cloud shell on OCI and then had to **chmod** it in order to run.
