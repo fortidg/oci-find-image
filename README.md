@@ -24,6 +24,7 @@
 ### I added the shell script in the cloud shell on OCI and then had to **chmod** it in order to run.
 
 ...
+
 userh@cloudshell:~ (us-ashburn-1)$ ./find.sh 'Next-Gen Firewall (BYOL)' '7.2.3' 'us-ashburn-1'
 {
   "listingId": "ocid1.appcataloglisting.oc1..aaaaaaaam7ewzrjbltqiarxukuk72v2lqkdtpqtwxqpszqqvrm7likfnpt5q",
