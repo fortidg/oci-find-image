@@ -10,7 +10,7 @@
 ### The above command gave me all marketplace images available in the region.  The below sample is from just a single FortiGate listing.  I wil lused the display name to populate the "$STERM" variable in the command
 * Sample output
 
-...
+...sh
 
     {
       "displayName": "FortiGate Next-Gen Firewall (4 cores)",
@@ -23,7 +23,7 @@
 
 ### I added the shell script in the cloud shell on OCI and then had to **chmod** it in order to run.
 
-...
+...sh
 
 userh@cloudshell:~ (us-ashburn-1)$ ./find.sh 'Next-Gen Firewall (BYOL)' '7.2.3' 'us-ashburn-1'
 {
@@ -35,7 +35,7 @@ userh@cloudshell:~ (us-ashburn-1)$ ./find.sh 'Next-Gen Firewall (BYOL)' '7.2.3' 
 ```
 ### I tried above in both uk-london-1 and us-ashburn-1 regions and found that the lisingID, listingResourceID and listingResourceVersion wer identical.
 
-```
+```sh
 user@cloudshell:~ (us-ashburn-1)$ ./find.sh 'Next-Gen Firewall (BYOL)' '7.2.3' 'uk-london-1'
 {
   "listingId": "ocid1.appcataloglisting.oc1..aaaaaaaam7ewzrjbltqiarxukuk72v2lqkdtpqtwxqpszqqvrm7likfnpt5q",
@@ -46,7 +46,7 @@ user@cloudshell:~ (us-ashburn-1)$ ./find.sh 'Next-Gen Firewall (BYOL)' '7.2.3' '
 '''
 ### Below is an example looking for paygo and a different version
 
-```
+```sh
 user@cloudshell:~ (us-ashburn-1)$ ./find.sh 'FortiGate Next-Gen Firewall (8 cores)' '7.0.9' 'uk-london-1'
 {
   "listingId": "ocid1.appcataloglisting.oc1..aaaaaaaa6e3iscizq3p24bfb5nr4wxsxzc3s6mzpekxgv7f2kse35akhg45q",
