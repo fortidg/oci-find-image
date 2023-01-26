@@ -10,7 +10,7 @@
 ### The above command gave me all marketplace images available in the region.  The below sample is from just a single FortiGate listing.  I wil lused the display name to populate the "$STERM" variable in the command
 * Sample output
 
-...sh
+```sh
 
     {
       "displayName": "FortiGate Next-Gen Firewall (4 cores)",
@@ -23,7 +23,7 @@
 
 ### I added the shell script in the cloud shell on OCI and then had to **chmod** it in order to run.
 
-...sh
+```sh
 
 userh@cloudshell:~ (us-ashburn-1)$ ./find.sh 'Next-Gen Firewall (BYOL)' '7.2.3' 'us-ashburn-1'
 {
